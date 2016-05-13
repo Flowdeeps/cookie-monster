@@ -1,0 +1,33 @@
+@import url("bower_components/blankslate/reset.less");
+
+#cookieStatus {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 300px;
+  line-height: 300px;
+  font-family: sans-serif;
+  font-size: 3em;
+  color: white;
+  text-align: center;
+  h2 {
+    display: none;
+  }
+  &.success {
+    background: url("../images/cookie.gif") center center no-repeat #395a94;
+    h2 {
+      &:first-child {
+        display: block;
+      }
+    }
+  }
+  &.failure {
+    background: url("../images/no-cookie.gif") center center no-repeat #f5440a;
+    h2 {
+      &:nth-of-type(2) {
+        display: block;
+      }
+    }
+  }
+}

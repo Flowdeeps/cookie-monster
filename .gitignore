@@ -1,0 +1,52 @@
+# --------------------------------------------------------------------
+# Files unique to local development environment
+# --------------------------------------------------------------------
+
+
+/.idea
+/node_modules
+/bower_components
+*.css.map
+
+
+# Created by http://gitignore.io
+
+### Node ###
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+
+npm-debug.log
+node_modules
+bower_components
+
+### Linux ###
+.*
+!.bowerrc
+!.htaccess
+!.gitignore
+!.git*
+!.editorconfig
+!.jshintrc
+!.npmignore
+!.travis.yml
+*~
+
+### SASS ###
+*.sass-cache
+
+
+#/.htaccess
+#/license.txt
+#/readme.html
+/sitemap.xml
+/sitemap.xml.gz
