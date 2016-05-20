@@ -126,30 +126,117 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-#cookieStatus {
+html * {
+  font-family: sans-serif;
+}
+body {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff7b0d+0,ffa84c+100 */
+  background: #ff7b0d;
+  /* Old browsers */
+  background: -webkit-linear-gradient(top, #ff7b0d 0%, #ffa84c 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -moz-linear-gradient(top, #ff7b0d 0%, #ffa84c 100%);
+  /* FF3.6-15 */
+  background: linear-gradient(to bottom, #ff7b0d 0%, #ffa84c 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7b0d', endColorstr='#ffa84c', GradientType=0);
+  /* IE6-9 */
+  height: calc(100vh - 20px);
+}
+#cookies_permissions {
+  background: #a0c9ec;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 20px;
+  box-shadow: 0 0 20px #000;
+}
+#cookies_permissions p {
+  margin: 0 0 20px;
+}
+#cookies_permissions #close {
+  background: url("../images/close.svg") center center no-repeat transparent;
+  background-size: contain;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  text-indent: -10000em;
+  cursor: pointer;
+}
+#cookies_permissions form fieldset legend {
+  font-weight: bold;
+  margin: 0 0 20px;
+}
+#cookies_permissions form fieldset label {
+  margin-right: 5px;
+}
+#cookies_permissions form fieldset input[type="radio"] {
+  margin-right: 10px;
+}
+#content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+#content h1 {
+  background: url("../images/logo.svg") center center no-repeat transparent;
+  background-size: contain;
+  height: 100px;
+  overflow: hidden;
+  text-indent: -10000em;
+  margin: 20px 0 30px;
+}
+#content h2 {
+  font-weight: bold;
+  margin: 0 0 20px;
+}
+#content p {
+  margin: 0 0 20px;
+}
+#content figure {
+  text-align: center;
+}
+#content figure img {
+  margin: 0 0 10px;
+}
+#content figure figcaption {
+  color: #666;
+  font-size: 80%;
+  font-style: italic;
+}
+#cookie_status {
   position: absolute;
   left: 0;
   bottom: 0;
   right: 0;
-  height: 300px;
-  line-height: 300px;
+  height: 273px;
+  line-height: 273px;
   font-family: sans-serif;
   font-size: 3em;
   color: white;
   text-align: center;
-}
-#cookieStatus h2 {
+  box-shadow: 0 0 20px #000;
   display: none;
 }
-#cookieStatus.success {
-  background: url("../images/cookie.gif") center center no-repeat #395a94;
+#cookie_status h2 {
+  display: none;
 }
-#cookieStatus.success h2:first-child {
+#cookie_status.success,
+#cookie_status.failure {
   display: block;
 }
-#cookieStatus.failure {
+#cookie_status.success {
+  background: url("../images/cookie.gif") center center no-repeat #395a94;
+}
+#cookie_status.success h2:first-child {
+  display: block;
+}
+#cookie_status.failure {
   background: url("../images/no-cookie.gif") center center no-repeat #f5440a;
 }
-#cookieStatus.failure h2:nth-of-type(2) {
+#cookie_status.failure h2:nth-of-type(2) {
   display: block;
 }
